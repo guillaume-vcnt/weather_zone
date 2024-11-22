@@ -24,7 +24,7 @@ OS : Windows
 
 ## Utilisation 
 
-S'exécute via 
+S'exécute via https://guillaume-vcnt.github.io/weather_zone
 
 ## Sources
 
