@@ -6,7 +6,7 @@ Ce projet a pour objectif de développer une application web qui permette de ré
 
 ## Caractéristiques
 
-État du projet : Terminé
+État du projet : En cours
 
 Nombre de participants : 2
 
