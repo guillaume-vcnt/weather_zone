@@ -1,6 +1,6 @@
 let dataRequested, formattedLocUrl, timer, climdexIndices;
 let yearsArray = [];
-let yearArr = []
+let yearArr = [];
 let data = {};
 let citiesData = {};
 let selectedCityData = {};
@@ -92,10 +92,10 @@ function getClickedbutton(event) {
   // return [name, country, region, latitude, longitude];
 }
 
-  function validDate(container) {
-    const validFormat = /^\d{4}-\d{2}-\d{2}$/
-     if (validFormat.test(container.value)) {
-      return true
-     }
-     return false
-    }
+function validDate(container) {
+  const validFormat = /^\d{4}-\d{2}-\d{2}$/;
+  if (validFormat.test(container.value)) {
+    return true;
+  }
+  return false;
+}

@@ -27,7 +27,7 @@ function generateGraph(indices, radioChecked) {
       if (dataRequested === "neige") {
         yaxis = data.daily.snowfall_sum;
       }
-      createLegend()
+      createLegend();
       animateGraph();
       break;
     case "tmm":
@@ -123,7 +123,7 @@ function animateGraph() {
   const config = {
     type: "line",
     data: {
-      labels:yearArr,
+      labels: yearArr,
       datasets: [
         {
           borderColor: "white",
@@ -164,8 +164,6 @@ function animateGraph() {
   chart = new Chart(ctx, config);
 }
 
-
-
 function indiceGraph() {
   chart = new Chart(divContainer, {
     type: type,
@@ -183,7 +181,6 @@ function indiceGraph() {
   });
 }
 
-
 function createLegend() {
-  yearArr = data.daily.time.map((x) => parseInt(x.split('-')[0]))
+  yearArr = data.daily.time.map((x) => parseInt(x.split("-")[0]));
 }

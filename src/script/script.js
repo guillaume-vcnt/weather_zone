@@ -40,11 +40,15 @@ document.body.addEventListener("click", (event) => {
       : null;
     displayDataInfos();
   }
-  if (event.target.id === "fetch-button") { 
+  if (event.target.id === "fetch-button") {
     if (validDate(startDateContainer) && validDate(endDateContainer)) {
-    fetchApi(formattedLocUrl, formatDateUrl(), formatParamsUrl(dataRequested))
-  } 
-}
+      fetchApi(
+        formattedLocUrl,
+        formatDateUrl(),
+        formatParamsUrl(dataRequested)
+      );
+    }
+  }
 
   if (event.target.parentElement.className === "dropdown-city-menu") {
     getClickedbutton(event);
@@ -95,25 +99,24 @@ cityInput.addEventListener("keyup", function (e) {
   }, 1000);
 });
 
-startDateContainer.addEventListener("change",() => {
-  if (!validDate(startDateContainer)){
-    startDateContainer.style.color ="red"
-    startDateContainer.style.border ="1px solid red"
- }
-  if (!startDateContainer.value){ 
+startDateContainer.addEventListener("change", () => {
+  if (!validDate(startDateContainer)) {
+    startDateContainer.style.color = "red";
+    startDateContainer.style.border = "1px solid red";
+  }
+  if (!startDateContainer.value) {
     // console.log("coucou")
-    startDateContainer.style.color ="white"
-    startDateContainer.style.border ="1px solid white"
+    startDateContainer.style.color = "white";
+    startDateContainer.style.border = "1px solid white";
   }
-
-})
-endDateContainer.addEventListener("change",() => {
-  if (!validDate(endDateContainer)){
-    endDateContainer.style.color ="red"
-    endDateContainer.style.border ="1px solid red"
-}
-  if (!endDateContainer.value){
-    endDateContainer.style.color ="white"
-    endDateContainer.style.border ="1px solid white"
+});
+endDateContainer.addEventListener("change", () => {
+  if (!validDate(endDateContainer)) {
+    endDateContainer.style.color = "red";
+    endDateContainer.style.border = "1px solid red";
   }
-  })
+  if (!endDateContainer.value) {
+    endDateContainer.style.color = "white";
+    endDateContainer.style.border = "1px solid white";
+  }
+});
