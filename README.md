@@ -16,7 +16,7 @@ Refactorisation : Non
 
 Responsive : Non
 
-UX/UI : Non
+UI : Oui
 
 IDE : VSCode
 
