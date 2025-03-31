@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Zone</title>
+    <link rel="stylesheet" href="style.css" />
+    <style class="Polices">
+      @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+    </style>
+    <link rel="shortcut icon" href="" />
+    <script src="src/script/chart.umd.js"></script>
+    <script src="src/script/utilities.js" defer></script>
+    <script src="src/script/indices.js" defer></script>
+    <script src="src/script/display.js" defer></script>
+    <script src="src/script/script.js" defer></script>
+    <script src="src/script/graph.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="text-effect">Weather Zone</h1>
+    </header>
+    <main>
+      <div class="main-div">
+        <div class="radio-container">
+          <div class="radio-button">
+            <input name="graph-choice" id="raw" type="radio" checked />
+            <label for="raw" class="indice-0">Raw</label>
+          </div>
+
+          <div class="radio-button">
+            <input name="graph-choice" id="tmm" type="radio" />
+            <label for="tmm" class="indice-1">TMm</label>
+          </div>
+
+          <div class="radio-button">
+            <input name="graph-choice" id="txge30" type="radio" />
+            <label for="txge30" class="indice-2">TXge30</label>
+          </div>
+          <div class="radio-button">
+            <input name="graph-choice" id="txgt50p" type="radio" />
+            <label for="txgt50p" class="indice-3">TXgt50p</label>
+          </div>
+          <div class="radio-button">
+            <input name="graph-choice" id="txx" type="radio" />
+            <label for="txx" class="indice-4">TXx</label>
+          </div>
+
+          <div class="radio-button">
+            <input name="graph-choice" id="etr" type="radio" />
+            <label for="etr" class="indice-5">ETR</label>
+          </div>
+
+          <div class="radio-button">
+            <input name="graph-choice" id="r10mm" type="radio" />
+            <label for="r10mm" class="indice-6">R10mm</label>
+          </div>
+        </div>
+
+        <div class="param-canvas-container">
+          <div class="formulaire-typeofweather">
+            <div class="pluie">
+              <input type="radio" id="pluie" name="input-radio" />
+              <label for="pluie">Precipitation</label>
+            </div>
+
+            <div class="neige">
+              <input type="radio" id="neige" name="input-radio" />
+              <label for="neige">Snowfall</label>
+            </div>
+
+            <div class="vent">
+              <input type="radio" id="vent" name="input-radio" />
+              <label for="vent">Wind</label>
+            </div>
+
+            <div class="temperature">
+              <input type="radio" id="temperature" name="input-radio" />
+              <label for="temperature">Temperature</label>
+            </div>
+          </div>
+
+          <div class="graph-container">
+            <div class="graph">
+              <canvas class="graph-input"></canvas>
+            </div>
+
+            <div class="input-dropdown-container">
+              <div class="input-container">
+                <div class="city-input-container">
+                  <input
+                    id="ville"
+                    type="text"
+                    name="ville"
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="date-input-container">
+                  <input
+                    type="text"
+                    id="start-date"
+                    name="start-date"
+                    placeholder="yyyy-mm-dd"
+                    autocomplete="off"
+                  />
+
+                  <input
+                    type="text"
+                    id="end-date"
+                    name="end-date"
+                    placeholder="yyyy-mm-dd"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="button">
+              <button id="fetch-button">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-container"><p class="text-infos"></p></div>
+      </div>
+    </main>
+  </body>
+</html>
