@@ -2,7 +2,7 @@
 
 ## À propos
 
-Ce projet a pour objectif de développer une application web qui permette de récupérer et visualiser des données Météorologiques depuis 1940 de façon dynamique et ludique.
+Ce projet a pour objectif de développer une application web permettant de récupérer et visualiser des données météorologiques depuis 1940 de façon dynamique et ludique.
 
 ## Caractéristiques
 
