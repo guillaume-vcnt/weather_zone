@@ -8,15 +8,9 @@ Ce projet a pour objectif de développer une application web qui permette de ré
 
 État du projet : Terminé
 
-Nombre de participants : 2
+Nombre de participants : 3
 
 Technologies : JavaScript, HTML, CSS
-
-Refactorisation : Non
-
-Responsive : Non
-
-UI : Oui
 
 IDE : VSCode
 
