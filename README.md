@@ -12,6 +12,8 @@ Nombre de participants : 3
 
 Technologies : JavaScript, HTML, CSS
 
+Services : Chart.js
+
 IDE : VSCode
 
 OS : Windows
